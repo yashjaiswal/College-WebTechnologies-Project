@@ -1,0 +1,29 @@
+<html>
+<head><title>CricInfo</title>
+<style>
+    
+h1{font-family:copperplate gothic;}
+.searchbox myform{float:right;}
+.menu p{float:center; font-family:copperplate gothic;font-weight:bold;}
+.team table{font-family:copperplate gothic;}
+</style>
+</head>
+<body>
+
+<script type="text/javascript">
+
+
+</script>
+<h1 align=center><font face="Copperplate Gothic">CricInfo</font></h1>
+<hr>
+<div class="menu"><p><a href=index.html>Home</a> | <a href=customsearch1.html target=_blank>Custom Search</a> | <a href="insertplayer.html" target=_blank>Insert new Player</a> | Rankings</p></div>
+<form align='center' name="ranking" action='ranking' target="playernames">
+    <input type='radio' name="ranking" value="batting">Batsmen Rankings
+    <input type='radio' name="ranking" value="bowling">Bowlers Rankings
+    <br>
+    <input type="submit" value="Go!">
+</form>
+
+<iframe name="playernames" scrolling=yes width=100% height=70%></iframe>
+</body>
+</html>

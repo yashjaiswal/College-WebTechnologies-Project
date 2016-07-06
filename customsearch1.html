@@ -1,0 +1,54 @@
+<html>
+<head><title>CricInfo</title>
+<style>
+.menu p{float:center; font-family:copperplate gothic;font-weight:bold;}
+.search table{font-family:copperplate gothic;}
+</style>
+</head>
+<body>
+
+<script type="text/javascript">
+
+</script>
+
+<h1 align=center><font face="Copperplate Gothic">CricInfo</font></h1>
+<hr>
+
+<div class="menu">
+<p><a href=index.html target=_blank>Home</a> | Custom Search | <a href="insertplayer.html" target=_blank>Insert new Player</a>| <a href="ranking.html" target="_blank">Rankings</a></p>
+</div>
+
+<div class="search">
+<form name="search" action="customsearch" target="playerdata">
+<table>
+<tr><th align=left>Team:</th><td><input type="checkbox" name="team" value="India">India</td><td><input type="checkbox" name="team" value="Australia">Australia</td><td><input type="checkbox" name="team" value="South Africa">South Africa</td><td><input type="checkbox" name="team" value="England">England</td><td><input type="checkbox" name="team" value="West Indies">West Indies</td></tr>
+<tr><td></td><td><input type="checkbox" name="team" value="Pakistan">Pakistan</td><td><input type="checkbox" name="team" value="New Zealand">New Zealand</td><td><input type="checkbox" name="team" value="Sri Lanka">Sri Lanka</td><td><input type="checkbox" name="team" value="Bangladesh">Bangladesh</td><td><input type="checkbox" name="team" value="Zimbabwe">Zimbabwe</td></tr>
+<tr></tr><tr></tr><tr></tr><tr></tr>
+<tr></tr><tr></tr><tr></tr><tr></tr>
+<tr><th align=left>Runs:</th><td>
+<select name="runs" id="runs">
+    <option value="Nill">Nill</option>
+    <option value="<5000"><5000</option>
+    <option value="<8000"><8000</option>
+    <option value="<12000"><12000</option>
+    <option value=">=12000">>=12000</option>
+</select></td><td></td>
+<th align=left>Wickets:</th><td>
+<select name="wickets" id="wickets">
+    <option value="Nill">Nill</option>
+    <option value="<50"><50</option>
+  <option value="<150"><150</option>
+  <option value="<300"><300</option>
+  <option value=">=300">>=300</option>
+</select></td></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+<tr><td><input type="Submit" value="Search"></td></tr>  
+</table>
+</form>
+</div>
+
+<iframe name="playerdata" width=100% height=100% scrolling=yes ></iframe>
+
+
+</body>
+</html>
+
